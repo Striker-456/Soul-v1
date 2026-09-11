@@ -17,29 +17,7 @@
     "tabs": [
       {
         "tab": "Manual SoulChat",
-        "groups": [
-          {
-            "group": "Primeros Pasos",
-            "pages": [
-              "primeros-pasos/introduccion",
-              "primeros-pasos/inicio-sesion"
-            ]
-          },
-          {
-            "group": "Módulo SoulChat WP (Administrador)",
-            "pages": [
-              "soulchat-wp/introduccion",
-              "soulchat-wp/dashboard",
-              "soulchat-wp/chat-agente",
-              "soulchat-wp/buscar-historial",
-              "soulchat-wp/gestion-flujos"
-            ]
-          },
-          {
-            "group": "Módulo CUI (Administrador)",
-            "pages": []
-          }
-        ]
+        "href": "primeros-pasos/introduccion"
       }
     ]
   }
