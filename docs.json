@@ -1,0 +1,24 @@
+{
+  "theme": "luma",
+  "name": "Soul",
+  "colors": {
+    "primary": "#ef7025",
+    "light": "#eec9bc",
+    "dark": "#4fa1ab"
+  },
+  "favicon": "/favicon.svg",
+  "navbar": {
+    "primary": {
+      "type": "github",
+      "href": "https://github.com/soul-lang/soul"
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Manual SoulChat",
+        "href": "primeros-pasos/introduccion"
+      }
+    ]
+  }
+}
