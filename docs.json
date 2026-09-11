@@ -13,11 +13,41 @@
       "href": "https://github.com/soul-lang/soul"
     }
   },
+  "$schema": "https://mintlify.com/docs.json",
   "navigation": {
     "tabs": [
       {
         "tab": "Manual SoulChat",
-        "href": "primeros-pasos/00-introduccion"
+        "href": "primeros-pasos/00-introduccion",
+        "groups": [
+          {
+            "group": "Primeros Pasos",
+            "pages": [
+              "primeros-pasos/00-introduccion",
+              "primeros-pasos/01-inicio-sesion"
+            ]
+          },
+          {
+            "group": "Módulo SoulChat WP (Rol Administrador)",
+            "pages": [
+              "soulchat-wp/01-introduccion",
+              "soulchat-wp/02-dashboard",
+              "soulchat-wp/03-chat-agente",
+              "soulchat-wp/04-buscar-historial",
+              "soulchat-wp/05-gestion-flujos",
+              "soulchat-wp/06-configuracion",
+              "soulchat-wp/07-plantillas"
+            ]
+          },
+          {
+            "group": "Módulo CUI (Rol Administrador)",
+            "pages": [
+              "cui/01-introduccion",
+              "cui/02-crear-usuarios",
+              "cui/03-asignando-permisos"
+            ]
+          }
+        ]
       }
     ]
   }
