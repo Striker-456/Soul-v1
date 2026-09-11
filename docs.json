@@ -20,8 +20,21 @@
         "href": "primeros-pasos/introduccion",
         "groups": [
           {
+            "group": "Primeros Pasos",
+            "pages": [
+              "primeros-pasos/introduccion",
+              "primeros-pasos/inicio-sesion"
+            ]
+          },
+          {
             "group": "Módulo SoulChat WP (Administrador)",
-            "pages": []
+            "pages": [
+              "soulchat-wp/introduccion",
+              "soulchat-wp/dashboard",
+              "soulchat-wp/chat-agente",
+              "soulchat-wp/buscar-historial",
+              "soulchat-wp/gestion-flujos"
+            ]
           },
           {
             "group": "Módulo CUI (Administrador)",
