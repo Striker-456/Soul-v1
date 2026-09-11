@@ -17,7 +17,17 @@
     "tabs": [
       {
         "tab": "Manual SoulChat",
-        "href": "primeros-pasos/introduccion"
+        "href": "primeros-pasos/introduccion",
+        "groups": [
+          {
+            "group": "Módulo SoulChat WP (Administrador)",
+            "pages": []
+          },
+          {
+            "group": "Módulo CUI (Administrador)",
+            "pages": []
+          }
+        ]
       }
     ]
   }
