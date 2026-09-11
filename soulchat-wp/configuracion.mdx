@@ -1,10 +1,3 @@
----
-title: "Configuración"
-sidebarTitle: "Configuración"
-description: "Parámetros de la aplicación y del asistente virtual SoulChat"
-icon: "sliders"
----
-
 Aquí puedes configurar los parámetros de la aplicación y de SoulChat. Esta sección permite personalizar el comportamiento del asistente virtual de acuerdo con las necesidades de tu equipo: definir mensajes automáticos, establecer horarios de disponibilidad, gestionar respuestas predeterminadas y ajustar reglas de interacción con los usuarios.
 
 <Tabs>
@@ -26,27 +19,24 @@ Aquí puedes configurar los parámetros de la aplicación y de SoulChat. Esta se
       Cambia estas URLs solo si sabes lo que estás haciendo: una URL incorrecta puede interrumpir la comunicación del chatbot con sus servicios.
     </Warning>
   </Tab>
-
   <Tab title="Proveedores">
     Aquí se definen e integran los canales de comunicación y sus respectivos proveedores de servicio.
 
     - **Token Desarrollo y Habilitar edición:** autenticación en pruebas y desbloqueo seguro de campos.
-    - **Selección de Canal y Proveedor:** asocia un canal (por ejemplo *WhatsApp*) con un proveedor (por ejemplo *Smart*); puedes eliminar la vinculación con el icono de la caneca.
+    - **Selección de Canal y Proveedor:** asocia un canal (por ejemplo _WhatsApp_) con un proveedor (por ejemplo _Smart_); puedes eliminar la vinculación con el icono de la caneca.
     - **Configuraciones de la integración:**
       - **Bot Version:** versión asignada al chatbot.
       - **Token, Webhook URL y Base URL:** direcciones de conexión y tokens de seguridad.
       - **Id de la campaña, App channel, Usuario y Contraseña:** credenciales de acceso e identificación de la campaña.
   </Tab>
-
   <Tab title="General">
     Gestiona los parámetros globales del aplicativo y del chatbot:
 
-    - **Permitir:** activa o desactiva *Outbound*, *Envíos masivos*, *Ver histórico* y *Text Analytics*.
-    - **Modo de Operación:** elige entre *Árbol* (flujos predefinidos), *IA* o *Híbrido (Árbol + IA)*.
-    - **Permitir transferencia de chats entre agentes:** habilita reasignación de conversaciones (*Elegir colas* / *Elegir otros agentes*).
+    - **Permitir:** activa o desactiva _Outbound_, _Envíos masivos_, _Ver histórico_ y _Text Analytics_.
+    - **Modo de Operación:** elige entre _Árbol_ (flujos predefinidos), _IA_ o _Híbrido (Árbol + IA)_.
+    - **Permitir transferencia de chats entre agentes:** habilita reasignación de conversaciones (_Elegir colas_ / _Elegir otros agentes_).
     - **Permitir multimedia:** autoriza envío y recepción de archivos multimedia, al enviar y/o al recibir mensajes.
   </Tab>
-
   <Tab title="Meta Template">
     Gestiona y consulta las plantillas de mensajes aprobadas por **Meta** para la interacción con los usuarios.
 
@@ -59,25 +49,55 @@ Aquí puedes configurar los parámetros de la aplicación y de SoulChat. Esta se
       - **Visualizar (icono de ojo):** previsualiza el contenido y la estructura del mensaje.
     - **Nuevo Template:** inicia el proceso de creación de una nueva plantilla. El icono de recarga refresca el listado.
   </Tab>
-
   <Tab title="Mensajes Automáticos">
     Define y personaliza las respuestas estándar que el sistema envía de forma automatizada según distintos eventos:
 
     <AccordionGroup>
-      <Accordion title="Mensaje inactividad chat">Texto enviado al usuario cuando no registra actividad durante la conversación.</Accordion>
-      <Accordion title="Mensaje cierre chat por abandono">Notificación enviada al finalizar la conversación debido a la inactividad del usuario.</Accordion>
-      <Accordion title="Mensaje cierre chats por administrador">Mensaje emitido cuando la sesión es terminada desde el rol administrativo o por fallas técnicas.</Accordion>
-      <Accordion title="Mensaje de despedida al terminar interacción agente">Saludo final enviado automáticamente cuando el agente concluye la atención.</Accordion>
-      <Accordion title="Mensaje espera para ser atendido">Notificación mientras el sistema busca un agente disponible.</Accordion>
-      <Accordion title="Mensaje espera solicitud API">Mensaje temporal mientras el sistema procesa una consulta externa o integración.</Accordion>
-      <Accordion title="Mensaje Bot fuera de servicio/horario">Informa los horarios de atención cuando el cliente escribe fuera de la jornada establecida.</Accordion>
-      <Accordion title="Mensaje para opción inválida en árbol">Respuesta cuando el usuario selecciona una opción no válida dentro del flujo.</Accordion>
-      <Accordion title="Mensaje para correo inválido en árbol">Alerta cuando el dato ingresado no cumple el formato de correo electrónico.</Accordion>
-      <Accordion title="Mensaje para número inválido en árbol">Alerta cuando el número telefónico o numérico ingresado no es válido.</Accordion>
-      <Accordion title="Mensaje será transferido a agente">Se muestra al usuario antes de redirigir su conversación a un asesor humano.</Accordion>
+      <Accordion title="Mensaje inactividad chat">
+        Texto enviado al usuario cuando no registra actividad durante la conversación.
+      </Accordion>
+
+      <Accordion title="Mensaje cierre chat por abandono">
+        Notificación enviada al finalizar la conversación debido a la inactividad del usuario.
+      </Accordion>
+
+      <Accordion title="Mensaje cierre chats por administrador">
+        Mensaje emitido cuando la sesión es terminada desde el rol administrativo o por fallas técnicas.
+      </Accordion>
+
+      <Accordion title="Mensaje de despedida al terminar interacción agente">
+        Saludo final enviado automáticamente cuando el agente concluye la atención.
+      </Accordion>
+
+      <Accordion title="Mensaje espera para ser atendido">
+        Notificación mientras el sistema busca un agente disponible.
+      </Accordion>
+
+      <Accordion title="Mensaje espera solicitud API">
+        Mensaje temporal mientras el sistema procesa una consulta externa o integración.
+      </Accordion>
+
+      <Accordion title="Mensaje Bot fuera de servicio/horario">
+        Informa los horarios de atención cuando el cliente escribe fuera de la jornada establecida.
+      </Accordion>
+
+      <Accordion title="Mensaje para opción inválida en árbol">
+        Respuesta cuando el usuario selecciona una opción no válida dentro del flujo.
+      </Accordion>
+
+      <Accordion title="Mensaje para correo inválido en árbol">
+        Alerta cuando el dato ingresado no cumple el formato de correo electrónico.
+      </Accordion>
+
+      <Accordion title="Mensaje para número inválido en árbol">
+        Alerta cuando el número telefónico o numérico ingresado no es válido.
+      </Accordion>
+
+      <Accordion title="Mensaje será transferido a agente">
+        Se muestra al usuario antes de redirigir su conversación a un asesor humano.
+      </Accordion>
     </AccordionGroup>
   </Tab>
-
   <Tab title="Colas">
     Administra los grupos o departamentos de atención a los que se asignan las conversaciones de los usuarios.
 
@@ -97,7 +117,6 @@ Aquí puedes configurar los parámetros de la aplicación y de SoulChat. Esta se
     - **Configuración por día:** marca si el día está **Activo**, si aplica **24/7**, o define rangos con **Inicio** y **Fin**.
     - **Mensaje de no atención:** respuesta automática cuando el usuario escribe fuera del horario configurado.
   </Tab>
-
   <Tab title="Plantillas">
     El administrador puede usar este módulo para crear plantillas para sus chats, y editar o eliminar plantillas existentes.
 
