@@ -1,0 +1,146 @@
+---
+title: "Configuración"
+sidebarTitle: "Configuración"
+description: "Configura los parámetros de la aplicación y de SoulChat: Backend URLs, Proveedores, General, Meta Template, Mensajes Automáticos y Colas"
+icon: "sliders"
+---
+
+Aquí puedes configurar los parámetros de la aplicación y de SoulChat. Esta sección permite personalizar el comportamiento del asistente virtual de acuerdo con las necesidades de tu equipo, como definir mensajes automáticos, establecer horarios de disponibilidad, gestionar respuestas predeterminadas y ajustar reglas de interacción con los usuarios. De esta manera, podrás optimizar la experiencia del cliente y mejorar la eficiencia operativa.
+
+<Tabs>
+  <Tab title="Backend URLs">
+    En la pestaña Backend URLs del módulo de Configuración, se gestionan las conexiones técnicas y los puntos de enlace (endpoints) que permiten el funcionamiento y la integración del aplicativo con los distintos servicios del chatbot:
+
+    **Token Desarrollo:** Campo para la autenticación en entornos de pruebas o desarrollo, con la opción de visibilidad mediante el icono del ojo.
+
+    **Habilitar edición:** Botón de seguridad que bloquea o desbloquea los campos para evitar modificaciones accidentales en las direcciones de los servicios.
+
+    **URLs de Servicios:** Campos de configuración donde se definen las rutas base de los microservicios del sistema, tales como:
+
+    - **Prefix:** Prefijo de identificación del cliente o proyecto.
+    - **Assigner URL:** Dirección del asignador de chats y eventos.
+    - **Bottree URL:** Enlace del motor de árbol conversacional.
+    - **Main URL:** Dirección principal de la API del sistema.
+    - **Messenger:** Servicio encargado de la mensajería y transmisión de chats.
+    - **Api Service:** Pauta de conexión para servicios generales de AllinOne-Chat.
+    - **Api Sentimientos (Text analytics) / Api Estrategias:** Endpoints destinados al procesamiento analítico y de datos de texto.
+
+    ---
+
+    📷 **[ESPACIO PARA CAPTURA]** — *Pestaña "Backend URLs": campo Token Desarrollo con botón "Habilitar edición", y los campos Prefix, Assigner URL, Bottree URL, Main URL, Messenger, Api Service, Api Sentimientos y Api Estrategias.*
+
+    ---
+  </Tab>
+
+  <Tab title="Proveedores">
+    En la pestaña Proveedores del módulo de Configuración, se definen e integran los canales de comunicación y sus respectivos proveedores de servicio:
+
+    **Token Desarrollo y Habilitar edición:** Permiten la autenticación en entornos de prueba y el desbloqueo seguro de los campos para modificar las credenciales.
+
+    **Selección de Canal y Proveedor:** Muestra menús desplegables para asociar un canal específico (por ejemplo, *whatsapp*) con un proveedor determinado (por ejemplo, *Smart*), con la posibilidad de eliminar dicha vinculación mediante el icono de la caneca.
+
+    **Configuraciones de la integración:** Campos para ingresar los parámetros de autenticación y conexión requeridos por el proveedor seleccionado:
+
+    - **Bot Version:** Versión asignada al chatbot.
+    - **Token, Webhook URL y Base URL:** Direcciones de conexión y tokens de seguridad para la recepción y envío de datos.
+    - **Id de la campaña, App channel, Usuario y Contraseña:** Credenciales de acceso e identificación de la campaña en la plataforma del proveedor.
+
+    ---
+
+    📷 **[ESPACIO PARA CAPTURA]** — *Pestaña "Proveedores": selección de canal (whatsapp) y proveedor (Smart), y el bloque "Configuraciones de Smart whatsapp" con Token, Base URL, Webhook URL, Id de la campaña, App channel, Usuario y Contraseña.*
+
+    ---
+  </Tab>
+
+  <Tab title="General">
+    Inserta las configuraciones generales para ajustar las condiciones generales de SoulChat de acuerdo con tus necesidades. En la pestaña General de la sección de Configuración, puedes gestionar los parámetros globales del aplicativo y del chat-bot mediante las siguientes opciones:
+
+    - **Permitir:** Interruptores para activar o desactivar funciones clave como mensajes salientes (*Outbound*), *Envío masivos*, *Ver histórico* y *Text Analytics*.
+    - **Modo de Operación:** Selección de la modalidad de respuesta del sistema, pudiendo elegir entre *Árbol* (flujos predefinidos), *IA* (inteligencia artificial) o *Híbrido (Árbol + IA)*.
+    - **Permitir transferencia de chats entre agentes:** Configuración para habilitar la reasignación de conversaciones, especificando si se permite *Elegir colas* o *Elegir otros agentes*.
+    - **Permitir multimedia:** Opciones para autorizar el envío y la recepción de archivos multimedia (*Al enviar mensajes* / *Al recibir mensajes*).
+
+    ---
+
+    📷 **[ESPACIO PARA CAPTURA]** — *Pestaña "General" con los interruptores Outbound, Envío masivos, Ver Histórico, Text Analytics; el selector de Modo de Operación (Árbol / IA / Híbrido); los interruptores de transferencia de chats (Elegir colas / Elegir otros agentes) y multimedia (Al enviar mensajes / Al recibir mensajes).*
+
+    ---
+  </Tab>
+
+  <Tab title="Meta Template">
+    En la pestaña Meta Templates del módulo de Configuración, podrás gestionar y consultar las plantillas de mensajes aprobadas por **Meta** para la interacción con los usuarios:
+
+    - **Buscar por identificador o título:** Campo de texto con icono de lupa para filtrar rápidamente las plantillas creadas.
+    - **Proveedor:** Muestra el proveedor asociado actualmente a las plantillas de Meta (por ejemplo, *Smart*).
+    - **Tabla de Plantillas:** Muestra la lista de las plantillas registradas con las siguientes columnas:
+      - **Interruptor de estado:** Permite activar o desactivar la plantilla individualmente.
+      - **Estado aprobación:** Indicador visual (círculo verde) que confirma el estado de verificación ante Meta.
+      - **Identificador (name) y Título:** Nombre técnico y título descriptivo asignado a la plantilla.
+      - **Visualizar (icono de ojo):** Permite previsualizar el contenido y la estructura del mensaje.
+
+    **Nuevo Template:** Botón para iniciar el proceso de creación de una nueva plantilla de mensaje. A su lado, el icono de recarga permite refrescar el listado.
+
+    ---
+
+    📷 **[ESPACIO PARA CAPTURA]** — *Pestaña "Meta Templates": buscador por identificador o título, selector de Proveedor (Smart), botón "Nuevo template", e ícono de recarga; tabla con columnas de estado, aprobación (círculo verde), identificador, título y visualizar.*
+
+    📷 **[ESPACIO PARA CAPTURA]** — *Ventana modal "Crear template" con los campos Título, Idioma, Tipo de mensaje ("Mensaje simple"), Mensaje, el interruptor "Incluir multimedia", el panel de "Vista previa" simulando un chat de WhatsApp, y los botones Cancelar / Guardar.*
+
+    ---
+  </Tab>
+
+  <Tab title="Mensajes Automáticos">
+    En la pestaña Mensajes Automáticos del módulo de Configuración, se definen y personalizan las respuestas estándar que el sistema envía de forma automatizada según distintos eventos de la interacción:
+
+    - **Mensaje inactividad chat:** Texto enviado al usuario cuando no registra actividad durante la conversación.
+    - **Mensaje cierre chat por abandono:** Notificación enviada al finalizar la conversación debido a la inactividad del usuario.
+    - **Mensaje cierre chats por administrador:** Mensaje emitido al usuario cuando la sesión es terminada desde el rol administrativo o por fallas técnicas.
+    - **Mensaje de despedida al terminar interacción agente:** Saludo final enviado automáticamente cuando el agente concluye la atención.
+    - **Mensaje espera para ser atendido:** Notificación para el usuario mientras el sistema busca un agente disponible.
+    - **Mensaje espera solicitud API:** Mensaje temporal mostrado mientras el sistema procesa una consulta externa o integración.
+    - **Mensaje Bot fuera de servicio/horario:** Texto informativo sobre los horarios de atención cuando el cliente escribe fuera de la jornada establecida.
+    - **Mensaje para opción inválida en árbol:** Respuesta del sistema cuando el usuario selecciona una opción no válida dentro de la navegación del flujo.
+    - **Mensaje para correo inválido en árbol:** Alerta emitida cuando el dato ingresado no cumple con el formato de correo electrónico.
+    - **Mensaje para número inválido en árbol:** Alerta emitida cuando el número telefónico o numérico ingresado no es válido.
+    - **Mensaje será transferido a agente:** Notificación que se muestra al usuario antes de redirigir su conversación a un asesor humano.
+
+    ---
+
+    📷 **[ESPACIO PARA CAPTURA]** — *Pestaña "Mensajes Automáticos": cuadrícula de 11 campos de texto editables, uno por cada mensaje automático listado arriba.*
+
+    ---
+  </Tab>
+
+  <Tab title="Colas">
+    En la pestaña Colas del módulo de Configuración, se administran los grupos o departamentos de atención a los que se asignan las conversaciones de los usuarios:
+
+    **Panel de Control y Opciones Principales:**
+
+    - **Buscar:** Campo con icono de lupa para filtrar colas registradas por nombre.
+    - **Crear cola:** Botón que permite añadir un nuevo grupo o departamento de atención.
+    - **Modo Prioridad:** Interruptor para activar o desactivar la asignación prioritaria en la distribución de chats.
+    - **Configurar Prioridad:** Botón para ajustar el orden jerárquico y de importancia entre las distintas colas.
+
+    ---
+
+    📷 **[ESPACIO PARA CAPTURA]** — *Pestaña "Colas": buscador, botón "Crear cola", interruptor "Modo Prioridad", botón "Configurar Prioridad", y tabla de colas (general, segmento privado, confirmacion citas) con columnas Acciones, Nombre, Usuarios, Prioridad.*
+
+    ---
+
+    **Horario de atención (Ventana modal):**
+
+    Al hacer clic en el icono del calendario de una cola específica, se despliega esta ventana para definir la disponibilidad de atención del equipo:
+
+    - **Opciones generales:**
+      - **Activar Atención:** Interruptor general para habilitar o suspender la atención de la cola.
+      - **24/7 (lunes a Domingo):** Interruptor para establecer una atención ininterrumpida durante toda la semana.
+    - **Configuración por días de la semana:** Para cada día (lunes a Domingo), permite marcar si está **Activo**, si aplica **Atención 24/7**, o definir rangos específicos mediante los campos **Inicio** y **Fin** de la jornada.
+    - **Mensaje de no atención:** Campo de texto en la parte inferior para personalizar la respuesta automática que recibirá el usuario cuando escriba fuera del horario configurado.
+
+    ---
+
+    📷 **[ESPACIO PARA CAPTURA]** — *Ventana modal "Horario de atención – general": interruptores Activar Atención y 24/7 (Lunes a Domingo); cuadrícula por día (Lunes a Domingo) con checkboxes Activo / Atención 24/7 y campos Inicio / Fin; campo de texto "Mensaje de no atención" con el ejemplo "Hola, nuestro horario de atención es de lunes a viernes...".*
+
+    ---
+  </Tab>
+</Tabs>
