@@ -14,6 +14,11 @@
     }
   },
   "navigation": {
-    "groups": []
+    "tabs": [
+      {
+        "tab": "Manual SoulChat",
+        "href": "primeros-pasos/introduccion"
+      }
+    ]
   }
 }
