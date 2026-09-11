@@ -16,59 +16,6 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Documentation",
-        "groups": [
-          {
-            "group": "Getting Started",
-            "pages": [
-              "introduction",
-              "installation",
-              "quickstart"
-            ]
-          },
-          {
-            "group": "Language Basics",
-            "pages": [
-              "basics/variables-and-types",
-              "basics/functions",
-              "basics/control-flow",
-              "basics/collections",
-              "basics/classes-and-objects",
-              "basics/modules-and-imports",
-              "basics/error-handling",
-              "basics/async-and-concurrency"
-            ]
-          },
-          {
-            "group": "Standard Library",
-            "pages": [
-              "modules/genai",
-              "modules/robo",
-              "modules/http",
-              "modules/file",
-              "modules/concurrency",
-              "modules/string-json-crypto",
-              "modules/math-time-console"
-            ]
-          },
-          {
-            "group": "CLI & Packages",
-            "pages": [
-              "cli/commands",
-              "cli/package-manager",
-              "cli/soul-json"
-            ]
-          },
-          {
-            "group": "Frameworks & Extensions",
-            "pages": [
-              "jet/introduction",
-              "udf/introduction"
-            ]
-          }
-        ]
-      },
-      {
         "tab": "Manual SoulChat",
         "href": "primeros-pasos/introduccion"
       }
