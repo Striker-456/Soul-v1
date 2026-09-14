@@ -6,12 +6,6 @@
     "light": "#9cf6f2",
     "dark": "#4fa1ab"
   },
-  "navbar": {
-    "primary": {
-      "type": "github",
-      "href": "https://github.com/soul-lang/soul"
-    }
-  },
   "$schema": "https://mintlify.com/docs.json",
   "navigation": {
     "tabs": [
