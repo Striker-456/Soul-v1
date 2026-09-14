@@ -6,10 +6,6 @@
     "light": "#9cf6f2",
     "dark": "#4fa1ab"
   },
-  "favicon": {
-    "light": "/images/imagen_2026-09-14_105800236.png",
-    "dark": "/images/imagen_2026-09-14_105802100.png"
-  },
   "navbar": {
     "primary": {
       "type": "github",
@@ -54,18 +50,15 @@
       }
     ]
   },
-  "background": {
-    "image": {
-      "light": "/images/image-5.png",
-      "dark": "/images/imagen_2026-09-14_105735507.png"
-    }
-  },
   "logo": {
     "light": "/images/imagen_2026-09-14_105751348.png",
     "dark": "/images/imagen_2026-09-14_105753604.png"
   },
   "appearance": {
     "default": "system",
-    "strict": true
+    "strict": false
+  },
+  "interaction": {
+    "drilldown": false
   }
 }
