@@ -2,8 +2,8 @@
   "theme": "luma",
   "name": "Soul",
   "colors": {
-    "primary": "#ef7025",
-    "light": "#eec9bc",
+    "primary": "#9cf6f2",
+    "light": "#9cf6f2",
     "dark": "#4fa1ab"
   },
   "favicon": {
@@ -63,5 +63,9 @@
   "logo": {
     "light": "/images/imagen_2026-09-14_105751348.png",
     "dark": "/images/imagen_2026-09-14_105753604.png"
+  },
+  "appearance": {
+    "default": "system",
+    "strict": true
   }
 }
